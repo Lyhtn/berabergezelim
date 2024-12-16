@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasıl Giderim?</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+        }
+        header {
+            background: url('img/header-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f6d365;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .destination {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .destination:hover {
+            transform: translateY(-5px);
+        }
+        .destination img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .destination a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .destination a:hover {
+            color: #fda085;
+        }
+        .destination p {
+            color: #555;
+            font-size: 1rem;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            header {
+                padding: 6rem 1rem;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0.5rem;
+                font-size: 1rem;
+            }
+            .destination {
+                flex-direction: column;
+                text-align: center;
+            }
+            .destination img {
+                width: 100%;
+                height: auto;
+            }
+            footer {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nasıl Giderim?</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="nasilgiderim.html">Nasıl Giderim</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <main>
+        <h1 style="text-align: center;">Denizli'de Gezilecek Yerler</h1>
+        <div class="destination">
+            <img src="img/pamukkale_new.jpg" alt="Pamukkale">
+            <div>
+                <a href="pamukkale.html">Pamukkale</a>
+                <p>Travertenleri ile ünlü doğal bir harika.</p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="img/kaleici.jpg" alt="Kaleiçi">
+            <div>
+                <a href="kaleici.html">Kaleiçi</a>
+                <p>Tarihi dokusuyla Denizli'nin kalbinde bir yer.</p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="img/camlik.jpg" alt="Çamlık Parkı">
+            <div>
+                <a href="camlik.html">Çamlık Parkı</a>
+                <p>Doğa ile iç içe keyifli bir yürüyüş alanı. Mangal yapabileceğiniz ve yürüyüş yaparken hayvanat bahçesine gidebileceğiniz bir alan.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nasıl Giderim Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
