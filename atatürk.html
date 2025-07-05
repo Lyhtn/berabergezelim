@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <head>
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <nav>
+            <a href="index.html">
+                <img src="img/icon.png" alt="Anasayfa İkonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+                Anasayfa
+            </a>
+            <a href="nasilgiderim.html">Nasıl Giderim</a>
+            <a href="hakkinda.html">Hakkında</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anasayfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çamlık Parkı'na Nasıl Gidilir?</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+        }
+        header {
+            background: url('img/header-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f6d365;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 2rem;
+        }
+        main img {
+            width: 40%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        main .content {
+            flex: 1;
+        }
+        main .content h1 {
+            color: #f44b42;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        main .content p {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        main .content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        main .content ul li {
+            background: #f6d365;
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            border-radius: 5px;
+            color: #333;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            main img {
+                width: 100%;
+                height: auto;
+            }
+            nav {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0.5rem;
+                font-size: 1rem;
+            }
+            footer {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Atatürk Etnografya Müzesine Nasıl Gidilir?</h1>
+    </header>
+
+    <nav>
+        <a href="index.html"></a>
+        <a href="nasilgiderim.html"></a>
+        <a href="hakkinda.html"></a>
+        <a href="iletisim.html"></a>
+    </nav>
+
+    <main>
+        <img src="img/atatürk.jpg" alt="Atatürk Etnografya Müzesi">
+        <div class="content">
+            <h1>Atatürk Etnografya Müzesi</h1>
+            <p>
+                Bina, dış yapısı, planı, pencerelerinin formu ve süsleme özellikleri ile Sakız üslubu olarak tanımlanabilir. İki katlı olarak inşa edilen yapı, plan itibariyle ortadan sofalı ve bu sofaya açılan odalardan oluşmaktadır
+            </p>
+            <h2>Ulaşım</h2>
+            <ul>
+                <li><strong>Otobüs No:</strong> 3C</li>
+                <li><strong>Sefer Aralığı:</strong> Her 20 dakikada bir</li>
+                <li><strong>Kalkış Noktası:</strong> Denizli Otobüs Terminali</li>
+            </ul>
+            <p>Bina, Cumhuriyetin ilk yıllarında parti binası olarak kullanılmış ve Ulu Önder Atatürk, 4 Şubat 1931 tarihinde Denizli’ye gelişlerinde burada bir gece misafir edilmiştir. 1950 yıllarından sonra Sağlık Bakanlığı’na tahsis edilerek bir süre Verem Savaş Dispanseri olarak hizmet vermiştir. 1977 yılında da Kültür Bakanlığı tarafından anıt eser olarak tescil edilerek koruma altına alınmıştır. Atatürk’ün doğumunun 100. yılı olan 1981 yılından 1983 yılı sonuna kadar binanın onarımı ve teşhir tanzimi gerçekleştirilerek 1 Şubat 1984 tarihinde müze olarak ziyarete açılmıştır. Zaman içinde binanın yıpranması sonucu; restore edilmiş ve teşhiri yenilenerek 4Şubat 1999 tarihinde yeniden ziyarete açılmıştır.
+
+Müzenin alt katında etnografik eserler sergilenmekte, üst katı ise Atatürk’e ait eserlerin sergilendiği iki odanın dışındaki diğer odalar konak olarak düzenlenmiştir.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Atatürk Etnografya Müzesi Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
