@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <nav>
+            <a href="index.html">
+                <img src="img/icon.png" alt="Anasayfa İkonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+                Anasayfa
+            </a>
+            <a href="nasilgiderim.html">Nasıl Giderim</a>
+            <a href="hakkinda.html">Hakkında</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anasayfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çamlık Parkı'na Nasıl Gidilir?</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+        }
+        header {
+            background: url('img/header-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f6d365;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 2rem;
+        }
+        main img {
+            width: 40%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        main .content {
+            flex: 1;
+        }
+        main .content h1 {
+            color: #f44b42;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        main .content p {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        main .content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        main .content ul li {
+            background: #f6d365;
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            border-radius: 5px;
+            color: #333;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            main img {
+                width: 100%;
+                height: auto;
+            }
+            nav {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0.5rem;
+                font-size: 1rem;
+            }
+            footer {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+       <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+    <header>
+        <h1>Çamlık Parkı'na Nasıl Gidilir?</h1>
+    </header>
+
+    <nav>
+        <a href="index.html"></a>
+        <a href="nasilgiderim.html"></a>
+        <a href="hakkinda.html"></a>
+        <a href="iletisim.html"></a>
+    </nav>
+
+    <main>
+        <img src="img/camlik.jpg" alt="Çamlık Parkı">
+        <div class="content">
+            <h1>Çamlık Parkı</h1>
+            <p>
+                Çamlık Parkı, doğa ile iç içe keyifli vakit geçirmek isteyenler için ideal bir mekandır. Piknik alanları, yürüyüş yolları ve çocuk oyun alanları sunar.
+            </p>
+            <h2>Ulaşım</h2>
+            <ul>
+                <li><strong>Otobüs No:</strong> 3C</li>
+                <li><strong>Sefer Aralığı:</strong> Her 20 dakikada bir</li>
+                <li><strong>Kalkış Noktası:</strong> Denizli Otobüs Terminali</li>
+            </ul>
+            <p>Çamlık Parkı'nda huzurlu bir gün geçirirken çevredeki doğal güzelliklerin tadını çıkarabilirsiniz.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Çamlık Parkı Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+         <!-- Chatbot iconu -->
+<img id="chatbot-trigger" src="img/chatbot_icon.png" alt="Chatbot" style="width: 60px; height: 60px; position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 200;">
+
+<!-- Chatbot kutusu -->
+<div id="chatbot-popup" style="display:none;">
+  <div class="chatbot-header">
+    <h3><i class="fas fa-robot"></i> Gezi Asistanı</h3>
+    <button id="close-chatbot">x</button>
+  </div>
+  <div id="chatbox">
+    <div class="message bot-message">
+      Merhaba! Ben Beraber Gezelim'in yapay zeka asistanıyım. Size nasıl yardımcı olabilirim?
+    </div>
+  </div>
+  <div class="chatbot-input-container">
+    <input type="text" id="userInput" placeholder="Bir soru sorun...">
+    <button class="send-button" onclick="sendMessage()">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+</body>
+<script src="js/ai-chatbot.js"></script>
+</html>
