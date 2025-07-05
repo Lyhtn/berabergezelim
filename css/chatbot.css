@@ -174,3 +174,10 @@
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+#chatbot-trigger {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;    /* Yuvarlak yapmak için */
+  object-fit: cover;     /* Görseli düzgün kesmek için */
+}
