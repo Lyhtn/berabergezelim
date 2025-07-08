@@ -3,7 +3,7 @@
 // SORU-CEVAP VERİTABANI
 const qaPairs = {
     "merhaba": "Merhaba! Beraber Gezelim'e hoş geldiniz. Size nasıl yardımcı olabilirim?",
-    "nasılsın": "Ben bir yapay zeka asistanıyım, her şey yolunda! Sizin için buradayım.",
+    "nasılsın": "Merhaba nisa hoşgeldin daha gelişme aşamasındayım",
     "nasıl giderim": "Ulaşım bilgileri için <a href='nasilgiderim.html' style='color:#4CAF50;font-weight:bold;'>bu sayfayı</a> ziyaret edebilirsiniz.",
     "pamukkale": "Pamukkale'de travertenler ve Hierapolis antik kenti görülmeye değer. Giriş ücreti 200 TL'dir.",
     "default": "Üzgünüm, bu soruyu anlayamadım. 'merhaba' veya 'nasıl giderim' gibi anahtar kelimeler deneyin."
