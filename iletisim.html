@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/stylei.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/icon.png" alt="Anasayfa İkonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+            Anasayfa
+        </a>
+        <a href="nasilgiderim.html">Nasıl Giderim</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="iletisim.html" class="active">İletişim</a>
+    </nav>
+
+    <header>
+        <h1>İletişim</h1>
+    </header>
+
+    <main>
+        <h1>Bize Ulaşın</h1>
+        <p>Herhangi bir sorunuz ya da öneriniz varsa bizimle iletişime geçmekten çekinmeyin.</p>
+        <p>E-posta adresimiz: <a href="mailto:bugraakbugra@hotmail.com">bugraakbugra@hotmail.com</a></p>
+        <p>Sosyal Medya: <a href="https://www.instagram.com/bugraozcicekk" target="_blank">@bugraozcicekk</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 İletişim Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Chatbot iconu -->
+    <img id="chatbot-trigger" src="img/chatboticon.png" alt="Chatbot" style="width: 60px; height: 60px; position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 200;">
+
+    <!-- Chatbot kutusu -->
+    <div id="chatbot-popup" style="display:none;">
+      <div class="chatbot-header">
+        <h3><i class="fas fa-robot"></i> Gezi Asistanı</h3>
+        <button id="close-chatbot">x</button>
+      </div>
+      <div id="chatbox">
+        <div class="message bot-message">
+          Merhaba! Ben Beraber Gezelim'in yapay zeka asistanıyım. Size nasıl yardımcı olabilirim?
+        </div>
+      </div>
+      <div class="chatbot-input-container">
+        <input type="text" id="userInput" placeholder="Bir soru sorun...">
+        <button class="send-button" onclick="sendMessage()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <script src="js/ai-chatbot.js"></script>
+</body>

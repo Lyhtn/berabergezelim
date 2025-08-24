@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atatürk Etnografya Müzesine Nasıl Gidilir?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/styleg.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/icon.png" alt="Anasayfa İkonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+            Anasayfa
+        </a>
+        <a href="nasilgiderim.html">Nasıl Giderim</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <header>
+        <h1>Atatürk Etnografya Müzesine Nasıl Gidilir?</h1>
+    </header>
+
+    <main>
+        <img src="img/ataturk_photo.jpg" alt="Atatürk Etnografya Müzesi">
+        <div class="content">
+            <h1>Atatürk Etnografya Müzesi</h1>
+            <p>
+                Bina, dış yapısı, planı, pencerelerinin formu ve süsleme özellikleri ile Sakız üslubu olarak tanımlanabilir. İki katlı olarak inşa edilen yapı, plan itibariyle ortadan sofalı ve bu sofaya açılan odalardan oluşmaktadır
+            </p>
+            <h2>Ulaşım</h2>
+            <ul>
+                <li><strong>Otobüs No:</strong> 3C</li>
+                <li><strong>Sefer Aralığı:</strong> Her 20 dakikada bir</li>
+                <li><strong>Kalkış Noktası:</strong> Denizli Otobüs Terminali</li>
+            </ul>
+            <p>
+                Bina, Cumhuriyetin ilk yıllarında parti binası olarak kullanılmış ve Ulu Önder Atatürk, 4 Şubat 1931 tarihinde Denizli’ye gelişlerinde burada bir gece misafir edilmiştir. 1950 yıllarından sonra Sağlık Bakanlığı’na tahsis edilerek bir süre Verem Savaş Dispanseri olarak hizmet vermiştir. 1977 yılında da Kültür Bakanlığı tarafından anıt eser olarak tescil edilerek koruma altına alınmıştır. Atatürk’ün doğumunun 100. yılı olan 1981 yılından 1983 yılı sonuna kadar binanın onarımı ve teşhir tanzimi gerçekleştirilerek 1 Şubat 1984 tarihinde müze olarak ziyarete açılmıştır. Zaman içinde binanın yıpranması sonucu; restore edilmiş ve teşhiri yenilenerek 4 Şubat 1999 tarihinde yeniden ziyarete açılmıştır.
+                Müzenin alt katında etnografik eserler sergilenmekte, üst katı ise Atatürk’e ait eserlerin sergilendiği iki odanın dışındaki diğer odalar konak olarak düzenlenmiştir.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Atatürk Etnografya Müzesi Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Chatbot iconu -->
+    <img id="chatbot-trigger" src="img/chatboticon.png"
+        alt="Chatbot" style="width: 60px; height: 60px; position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 200;">
+
+    <!-- Chatbot kutusu -->
+    <div id="chatbot-popup" style="display:none;">
+        <div class="chatbot-header">
+            <h3><i class="fas fa-robot"></i> Gezi Asistanı</h3>
+            <button id="close-chatbot">x</button>
+        </div>
+        <div id="chatbox">
+            <div class="message bot-message">
+                Merhaba! Ben Beraber Gezelim'in yapay zeka asistanıyım. Size nasıl yardımcı olabilirim?
+            </div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="userInput" placeholder="Bir soru sorun...">
+            <button class="send-button" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <script src="js/ai-chatbot.js"></script>
