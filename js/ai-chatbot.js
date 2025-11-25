@@ -6,7 +6,7 @@ const qaPairs = {
     "nasılsın": "Merhaba hoşgeldin daha gelişme aşamasındayım. Ondan dolayı bazı şeyleri anlayamıyorum ve hemen cevap veremiyorum çok yakında hepsi olucak ziyaret ettiğin için teşekkürler",
     "nasıl giderim": "Ulaşım bilgileri için <a href='nasilgiderim.html' style='color:#4CAF50;font-weight:bold;'>bu sayfayı</a> ziyaret edebilirsiniz.",
     "pamukkale": "Pamukkale'de travertenler ve Hierapolis antik kenti görülmeye değer. Giriş ücreti 200 TL'dir.",
-    "default": "Üzgünüm, bu soruyu anlayamadım. 'merhaba' veya 'nasıl giderim' gibi anahtar kelimeler deneyin."
+    "default": "Üzgünüm, bu soruyu anlayamadım. 'merhaba' veya 'nasıl giderim' gibi anahtar kelimeler deneyin.",
     "bilet fiyatı": "Güncel bilet fiyatları sezona göre değişmektedir. Ortalama giriş ücreti 200-300 TL arasındadır.",
     "çalışma saatleri": "Pamukkale ve çevresindeki turistik bölgeler genellikle 08:00 - 19:00 arasında açıktır. Mevsime göre değişiklik olabilir.",
     "nerede": "Pamukkale, Denizli il sınırları içerisinde yer almaktadır. İl merkezine yaklaşık 20 kilometre mesafededir.",
@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
 
 
 
