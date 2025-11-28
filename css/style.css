@@ -1,0 +1,250 @@
+
+         body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+        }
+        header {
+            background: url('../img/header-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 10rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            z-index: 2;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #ffd66b; /* golden nav links site-wide */
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff1b8; /* lighter gold on hover */
+        }
+        nav a.active, nav a:focus {
+            color: #fff1b8;
+            font-weight: 700;
+        }
+        /* Main content - warmer, premium card look */
+        main {
+            padding: 2.25rem;
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            /* Mat koyu gri arka plan (daha sıcak, nötr) */
+            background: linear-gradient(180deg, #2f3133 0%, #2a2b2d 100%);
+            border-radius: 14px;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.04);
+            color: #efebe8; /* içerik için açık renk yazı */
+        }
+        /* Make headings inside the light main area clearly visible */
+        main h2 {
+            color: #f3efe9; /* açık, krem-mat renk başlık için */
+            text-align: center;
+            margin-top: 0;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 0.4px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .card {
+            /* Card background adjusted from light to muted dark to match site theme */
+            background: linear-gradient(180deg, #3a3a3a 0%, #323232 100%);
+            border-radius: 14px;
+            box-shadow: 0 14px 36px rgba(0,0,0,0.6);
+            overflow: hidden;
+            width: 300px;
+            text-align: left;
+            transform: translateY(0);
+            transition: transform 0.28s ease, box-shadow 0.28s ease;
+            border: 1px solid rgba(0,0,0,0.5);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Nasıl Giderim page: destination cards */
+        .destination {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            /* Daha koyu, daha az parlak kart arka planı */
+            background: linear-gradient(180deg, #37393b 0%, #333436 100%);
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+            margin: 1.25rem 0;
+        }
+        .destination img {
+            width: 320px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            flex-shrink: 0;
+            border: 1px solid rgba(20,12,8,0.05);
+        }
+        .destination > div {
+            display: block;
+        }
+        .destination a {
+            display: inline-block;
+            color: #ffd66b; /* golden link */
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .destination p {
+            margin: 0.25rem 0 0 0;
+            color: #e8e5e2; /* açık metin, koyu kart üzerinde okunaklı */
+        }
+
+        @media (max-width: 768px) {
+            .destination { flex-direction: column; }
+            .destination img { width: 100%; height: 220px; }
+        }
+
+        /* Görüntülere tıklanıldığını göstermek için pointer */
+        .destination img { cursor: pointer; }
+
+        /* Contact page specific link colors (gold) */
+        .contact-page a {
+            color: #ffd66b; /* golden */
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .contact-page a:visited { color: #e6b84a; }
+        .contact-page a:hover {
+            color: #fff1b8;
+            text-decoration: underline;
+        }
+        /* Card title: block-level, clear spacing and subtle grey background */
+        .card h3 {
+            display: block;
+            margin: 0.75rem 1rem 0.5rem 1rem;
+            font-size: 1.2rem;
+            color: #efece8;
+            font-weight:700;
+            background: rgba(255,255,255,0.03); /* subtle panel slightly lighter */
+            padding: 10px 14px;
+            border-radius: 8px;
+        }
+        .card p {
+            padding: 0 1rem;
+            font-size: 1rem;
+            color: #d6d6d6;
+        }
+        .card a {
+            display: inline-block;
+            background: #000000; /* black outside */
+            color: #ffd66b; /* yellow text */
+            padding: 0.55rem 0.95rem;
+            margin: 1rem 1rem 1.25rem 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight:700;
+            border: 1px solid #111111;
+            transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+        }
+        .card a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            background: #0b0b0b;
+        }
+        footer {
+            background: #0b0b0b; /* solid black footer */
+            color: #ffd66b; /* golden text */
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+            color: #ffd66b;
+        }
+        /* Animasyonlar */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        header h1, header p {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            header {
+                padding: 6rem 1rem;
+            }
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0.5rem;
+                font-size: 1rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            .card {
+                width: 100%;
+            }
+        }
