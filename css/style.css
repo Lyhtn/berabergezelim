@@ -1,0 +1,382 @@
+
+         body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e9ecef; /* açık gri arka plan */
+            color: #efebe8; /* varsayılan açık yazı (main içinde daha koyu/ışıklı olacak) */
+        }
+        header {
+            background: url('../img/header-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 10rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            z-index: 2;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0,0,0,0.8); /* koyu nav */
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #ffd66b; /* golden nav links site-wide */
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff1b8; /* lighter gold on hover */
+        }
+        nav a.active, nav a:focus {
+            color: #fff1b8;
+            font-weight: 700;
+        }
+        /* Main content - warmer, premium card look */
+        main {
+            padding: 2.25rem;
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            /* Koyu içerik arka planı: deminki tema */
+            background: linear-gradient(180deg, #2f3133 0%, #2a2b2d 100%);
+            border-radius: 14px;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.04);
+            color: #efebe8; /* içerik için açık renk yazı */
+        }
+        /* Make headings inside the light main area clearly visible */
+        main h2 {
+            color: #f3efe9; /* açık, krem-mat renk başlık için */
+            text-align: center;
+            margin-top: 0;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 0.4px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .card {
+            /* Card background adjusted from light to muted dark to match site theme */
+            background: linear-gradient(180deg, #3a3a3a 0%, #323232 100%);
+            border-radius: 14px;
+            box-shadow: 0 14px 36px rgba(0,0,0,0.6);
+            overflow: hidden;
+            width: 300px;
+            text-align: left;
+            transform: translateY(0);
+            transition: transform 0.28s ease, box-shadow 0.28s ease;
+            border: 1px solid rgba(0,0,0,0.5);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Nasıl Giderim page: destination cards (light theme) */
+        /* Nasıl Giderim page: destination cards */
+        .destination {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            /* Daha koyu, daha az parlak kart arka planı */
+            background: linear-gradient(180deg, #37393b 0%, #333436 100%);
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+            margin: 1.25rem 0;
+        }
+        .destination img {
+            width: 320px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            flex-shrink: 0;
+            border: 1px solid rgba(20,12,8,0.05);
+        }
+        .destination > div {
+            display: block;
+        }
+        .destination a {
+            display: inline-block;
+            color: #ffd66b; /* golden link */
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .destination p {
+            margin: 0.25rem 0 0 0;
+            color: #e8e5e2; /* açık metin, koyu kart üzerinde okunaklı */
+        }
+
+/* Nasıl Giderim (geliştirilmiş) */
+.transport-grid { display: grid; grid-template-columns: 1fr 340px; gap: 20px; align-items: start; }
+.transport-col { display: grid; gap: 12px; }
+.transport-item { display: flex; gap: 12px; align-items: flex-start; background: linear-gradient(180deg,#3a3a3a 0%, #323232 100%); padding: 12px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.5); }
+.transport-item i { color: #ffd66b; font-size: 22px; width: 36px; }
+.transport-item h3 { margin: 0 0 4px 0; color: #efece8; font-size: 1.05rem; }
+.transport-item p { margin: 0; color: #e8e5e2; font-size: 0.95rem; }
+.transport-aside { display: flex; flex-direction: column; gap: 12px; }
+.map-embed { border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.03); }
+.quick-tips { background: linear-gradient(180deg,#2f3133 0%, #2a2b2d 100%); padding: 12px; border-radius: 10px; color: #efece8; border: 1px solid rgba(255,255,255,0.03); }
+.quick-tips h4 { margin: 0 0 8px 0; color: #ffd66b; }
+.quick-tips ul { margin: 0; padding-left: 1rem; }
+.quick-tips li { margin: 8px 0; color: #e8e5e2; }
+
+/* Özel: 'Tam ulaşım rehberi' linkini vurgula */
+.quick-tips a.highlight-link { color: #ffd66b; font-weight: 800; text-decoration: underline; }
+
+@media (max-width: 920px) { .transport-grid { grid-template-columns: 1fr; } }
+
+/* Yöresel Lezzetler (küçük kartlar) */
+.card-container .card img { height: 160px; }
+.card-container .card h3 { color: #ffd66b; margin-top: 8px; }
+.card-container .card p { color: #e8e5e2; }
+
+@media (max-width: 768px) {
+    .card-container { grid-template-columns: 1fr; display: grid; }
+    .card-container .card { width: 100%; }
+}
+
+/* Denizli Hakkında: two-column info */
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; justify-items: center; }
+.about-article { max-width: 720px; width: 100%; margin: 0 auto; text-align: left; padding: 0 14px; }
+.about-article p { color: #e8e5e2; line-height: 1.6; }
+.about-article h4 { margin: 10px 0; }
+.about-highlights { margin: 8px 0 0 1rem; color: #e8e5e2; display: block; text-align: left; }
+.about-highlights li { margin: 6px 0; }
+.about-facts { background: linear-gradient(180deg,#37393b 0%, #333436 100%); padding: 14px; border-radius: 10px; color: #efece8; border: 1px solid rgba(0,0,0,0.45); }
+.about-facts h3 { margin-top: 0; color: #ffd66b; }
+.about-facts dl { margin: 8px 0; }
+.about-facts dt { font-weight: 700; color: #e8e5e2; }
+.about-facts dd { margin: 0 0 8px 0; color: #d6d6d6; }
+.about-btn { display:inline-block; margin-top:12px; background:#ffd66b;color:#111;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700; }
+.about-btn:hover{opacity:0.95}
+.small-cta .highlight-link{ color:#ffd66b; font-weight:700; text-decoration:underline; }
+
+@media (max-width:920px){ .about-grid{ grid-template-columns: 1fr; } }
+
+@media (min-width: 920px) {
+    /* Geniş ekranlarda eğer sağda aside varsa iki sütun düzenini kullan */
+    .about-grid { grid-template-columns: 1fr 320px; justify-items: start; }
+}
+
+/* Yeni: Yeniden tasarlanmış Hakkında bölümü için stiller */
+.about-section { padding: 30px 16px; }
+.about-section h2 { text-align: center; margin-top: 0; margin-bottom: 18px; color: #f3efe9; }
+.about-inner { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center; justify-items: center; }
+.about-media img { width: 100%; max-width: 420px; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); display: block; }
+.about-content { max-width: 720px; width: 100%; text-align: left; color: #e8e5e2; }
+.about-content h4 { color: #ffd66b; margin-top: 12px; }
+.about-highlights { display: grid; grid-template-columns: repeat(1, minmax(0,1fr)); gap: 8px; padding-left: 0; list-style: none; margin: 8px 0; }
+.about-highlights li { padding-left: 22px; position: relative; }
+.about-highlights li::before { content: "\2713"; position: absolute; left: 0; color: #ffd66b; font-weight: 700; }
+.about-cta { margin-top: 12px; }
+.about-btn { display:inline-block; background:#ffd66b;color:#111;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700; }
+.about-btn:hover{opacity:0.95}
+
+@media (min-width: 920px) {
+    .about-inner { grid-template-columns: 420px 1fr; justify-items: start; }
+    .about-media { justify-self: start; }
+    .about-highlights { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+        @media (max-width: 768px) {
+            .destination { flex-direction: column; }
+            .destination img { width: 100%; height: 220px; }
+        }
+
+        /* Görüntülere tıklanıldığını göstermek için pointer */
+        .destination img { cursor: pointer; }
+
+        /* Contact page specific link colors (gold) */
+        .contact-page a {
+            color: #ffd66b; /* golden */
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .contact-page a:visited { color: #e6b84a; }
+        .contact-page a:hover {
+            color: #fff1b8;
+            text-decoration: underline;
+        }
+        /* Card title: block-level, clear spacing and subtle grey background */
+        .card h3 {
+            display: block;
+            margin: 0.75rem 1rem 0.5rem 1rem;
+            font-size: 1.2rem;
+            color: #efece8;
+            font-weight:700;
+            background: rgba(255,255,255,0.03); /* subtle panel slightly lighter */
+            padding: 10px 14px;
+            border-radius: 8px;
+        }
+        .card p {
+            padding: 0 1rem;
+            font-size: 1rem;
+            color: #d6d6d6;
+        }
+        .card a {
+            display: inline-block;
+            background: #000000; /* black outside */
+            color: #ffd66b; /* yellow text */
+            padding: 0.55rem 0.95rem;
+            margin: 1rem 1rem 1.25rem 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight:700;
+            border: 1px solid #111111;
+            transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+        }
+        .card a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            background: #0b0b0b;
+        }
+        footer {
+            background: #0b0b0b; /* solid black footer */
+            color: #ffd66b; /* golden text */
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+            color: #ffd66b;
+        }
+        /* Animasyonlar */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        header h1, header p {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            header {
+                padding: 6rem 1rem;
+            }
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0.5rem;
+                font-size: 1rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+
+/* Responsive image helper: use on main content images to keep them fluid while
+   preserving a sensible max-width for desktop cards. Applied via class
+  ="responsive-img" on <img> elements. */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 320px; /* matches the .destination default */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Meşhur Ürünler (Ürün kartları) */
+#urunler ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+#urunler li {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 8px 20px rgba(12,30,50,0.04);
+    border: 1px solid #eee;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+#urunler li::before {
+    content: "🛍️";
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+#urunler li strong { color: #ffd66b; font-weight:800; }
+#urunler li p { margin: 4px 0 0; color: #e6e3df; font-size: 0.95rem; }
+
+@media (max-width:520px) {
+    #urunler ul { grid-template-columns: 1fr; }
+    #urunler li::before { font-size: 22px; }
+}
+
+/* Modal styles for Meşhur Ürünler */
+.modal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 500; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+.modal-dialog { position: relative; width: min(860px, 94%); max-height: 90vh; overflow:auto; border-radius: 12px; z-index: 2; }
+.modal-body { background: linear-gradient(180deg,#2f3133 0%, #2a2b2d 100%); color: #efece8; padding: 24px; border-radius: 12px; box-shadow: 0 18px 40px rgba(0,0,0,0.6); }
+.modal-body h2 { margin-top: 0; color: #ffd66b; }
+.modal-close { position: absolute; right: 8px; top: 8px; background: transparent; color: #fff; border: none; font-size: 28px; cursor: pointer; z-index: 3; }
+
+/* Inside modal, style the products list */
+#urunler-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; }
+#urunler-list li { background: rgba(255,255,255,0.04); padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.03); }
+#urunler-list li strong { color: #ffd66b; }
+#urunler-list li p { color: #efece8; margin: 6px 0 0; }

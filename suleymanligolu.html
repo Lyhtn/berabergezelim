@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süleymanlı Gölü - Nasıl Gidilir?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/premium-style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/icon.png" alt="Anasayfa İkonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+            Anasayfa
+        </a>
+        <a href="nasilgiderim.html">Nasıl Giderim</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+    <script src="js/hero-sync.js"></script>
+
+    <header class="has-hero">
+        <section class="hero" style="position:relative;">
+            <div class="hero-iframe-wrap" aria-hidden="true" style="position:absolute;inset:0;overflow:hidden;z-index:0;">
+                <iframe
+                    src="https://www.youtube.com/embed/LqRUELsltj4?autoplay=1&mute=1&controls=0&loop=1&playlist=LqRUELsltj4&modestbranding=1&rel=0&playsinline=1"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    style="position:absolute;top:50%;left:50%;width:177.78vh;height:100vh;transform:translate(-50%,-50%);pointer-events:none;border:0;"
+                ></iframe>
+            </div>
+            <div class="hero-overlay" aria-hidden="true" style="position:relative;z-index:1;"></div>
+            <div class="hero-content" style="position:relative;z-index:2;">
+                <h1>Süleymanlı Gölü</h1>
+                <p>Doğal güzellikleri ve dinlendirici yürüyüş rotaları.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="destination">
+            <img class="responsive-img" src="img/suleymanligolu.jpg" alt="Süleymanlı Gölü" loading="lazy">
+            <div class="content">
+                                <h1>Süleymanlı Gölü</h1>
+                                <p>
+                                    Süleymanlı Gölü, sakin su yüzeyi, doğal çevresi ve kuş gözlem noktalarıyla doğaseverler için ideal bir destinasyondur. Göldeki yürüyüş yolları, kenarındaki ağaçlık alanlar ve piknik bölgeleri, hem kısa kaçamaklar hem de tam günlük gezi planları için uygundur.
+                                </p>
+                                <p>
+                                    Mevsime göre su seviyesi ve doğa manzarası değişiklik gösterir; sonbaharda yaprakların renkleri, baharda ise çiçeklenme gölü farklı bir güzelliğe bürür.
+                                </p>
+                                <h2>Ulaşım</h2>
+                                <ul>
+                                    <li><strong>Araba:</strong> Göl kenarına kadar ulaşım genellikle mümkündür; park yerleri sınırlı olabilir.</li>
+                                    <li><strong>Toplu taşıma:</strong> Bölge servisleri nadiren çalışabilir; önceden güzergah kontrolü önerilir.</li>
+                                    <li><strong>Yürüme/Bisiklet:</strong> Yakın mesafeler için ideal; doğa yürüyüşüne uygun ekipman getirin.</li>
+                                </ul>
+                                <h2>İpuçları</h2>
+                                <ul>
+                                    <li>Göl çevresinde çöplerinizi yanınıza alın; doğal alanların korunmasına yardımcı olun.</li>
+                                    <li>Havanın ani değişimlerine karşı katmanlı giyinme tavsiye edilir.</li>
+                                    <li>Kuş gözlemi için sabah erken saatler en uygunudur.</li>
+                                </ul>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2024 Süleymanlı Gölü. Tüm hakları saklıdır.</p></footer>
+    <img id="chatbot-trigger" src="img/chatboticon.png" alt="Chatbot" style="width: 60px; height: 60px; position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 200;">
+    <div id="chatbot-popup" style="display:none;"><div class="chatbot-header"><h3><i class="fas fa-robot"></i> Gezi Asistanı</h3><button id="close-chatbot">x</button></div><div id="chatbox"><div class="message bot-message">Merhaba! Ben Beraber Gezelim'in yapay zeka asistanıyım. Size nasıl yardımcı olabilirim?</div></div><div class="chatbot-input-container"><input type="text" id="userInput" placeholder="Bir soru sorun..."><button class="send-button" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button></div></div>
+    <script src="js/ai-chatbot.js"></script>
+</body>
+</html>

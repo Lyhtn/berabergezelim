@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleiçi'ne Nasıl Gidilir?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/premium-style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/icon.png" alt="Anasayfa İkonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+            Anasayfa
+        </a>
+        <a href="nasilgiderim.html">Nasıl Giderim</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <header class="has-hero">
+      <section class="hero" style="position:relative;">
+        <div class="hero-iframe-wrap" aria-hidden="true" style="position:absolute;inset:0;overflow:hidden;z-index:0;">
+          <iframe
+            src="https://www.youtube.com/embed/LqRUELsltj4?autoplay=1&mute=1&controls=0&loop=1&playlist=LqRUELsltj4&modestbranding=1&rel=0&playsinline=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            style="position:absolute;top:50%;left:50%;width:177.78vh;height:100vh;transform:translate(-50%,-50%);pointer-events:none;border:0;"
+          ></iframe>
+        </div>
+        <div class="hero-overlay" aria-hidden="true" style="position:relative;z-index:1;"></div>
+        <div class="hero-content" style="position:relative;z-index:2;">
+          <h1>Kaleiçi'ne Nasıl Gidilir?</h1>
+          <p>Tarihi dokusu ve atmosferiyle Kaleiçi'ni keşfedin.</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="destination">
+  <img class="responsive-img" src="img/kentmuzesi.jpg" alt="Kent Müzesi" loading="lazy">
+        <div class="content">
+          <h1>Kent Müzesi</h1>
+          <p>
+            Kent Müzesi, Denizli'nin tarihini ve kültürünü yansıtan önemli bir müzedir.
+          </p>
+          <h2>Ulaşım</h2>
+          <ul>
+            <li><strong>Otobüs No:</strong> 2B</li>
+            <li><strong>Sefer Aralığı:</strong> Her 15 dakikada bir</li>
+            <li><strong>Kalkış Noktası:</strong> Denizli Otobüs Terminali</li>
+          </ul>
+          <p>Kent Müzesi'ni ziyaret ettiğinizde Denizli'nin zengin tarihini ve kültürel mirasını keşfedebilirsiniz.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kent Müzesi Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Chatbot iconu -->
+    <img id="chatbot-trigger" src="img/chatboticon.png" alt="Chatbot" style="width: 60px; height: 60px; position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 200;">
+
+    <!-- Chatbot kutusu -->
+    <div id="chatbot-popup" style="display:none;">
+      <div class="chatbot-header">
+        <h3><i class="fas fa-robot"></i> Gezi Asistanı</h3>
+        <button id="close-chatbot">x</button>
+      </div>
+      <div id="chatbox">
+        <div class="message bot-message">
+          Merhaba! Ben Beraber Gezelim'in yapay zeka asistanıyım. Size nasıl yardımcı olabilirim?
+        </div>
+      </div>
+      <div class="chatbot-input-container">
+        <input type="text" id="userInput" placeholder="Bir soru sorun...">
+        <button class="send-button" onclick="sendMessage()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <script src="js/ai-chatbot.js"></script>
+    <script src="js/hero-sync.js"></script>
+  </body>
+  </html>
