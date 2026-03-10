@@ -1,0 +1,37 @@
+/* Minimal hero/video styles for index page */
+/* Bigger hero: more vertical space and stronger video presence */
+.hero{position:relative;height:88vh;min-height:640px;display:flex;align-items:flex-end;justify-content:flex-start;overflow:hidden;background:#000}
+.hero-video{position:absolute;left:50%;top:55%;transform:translate(-50%,-45%);min-width:120%;min-height:120%;width:auto;height:auto;object-fit:cover;z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.5));z-index:1}
+.hero-content{position:relative;z-index:2;color:#fff;padding:80px 48px 64px 48px;max-width:1100px}
+.hero-content h1{font-size:clamp(36px,6vw,72px);margin:0 0 10px}
+.hero-content p{margin:0;font-size:20px;color:rgba(255,255,255,0.95)}
+
+/* Responsive adjustments */
+@media (max-width:1000px){
+  .hero{height:78vh;min-height:520px}
+  .hero-video{top:60%;transform:translate(-50%,-50%);min-width:140%;min-height:140%}
+  .hero-content{padding:40px 20px 32px 20px}
+  .hero-content h1{font-size:clamp(28px,7vw,44px)}
+}
+@media (max-width:600px){
+  .hero{height:68vh;min-height:420px}
+  .hero-video{top:68%;transform:translate(-50%,-60%);min-width:160%;min-height:160%}
+  .hero-content{padding:28px 16px 28px 16px}
+  .hero-content h1{font-size:28px}
+  .hero-content p{font-size:16px}
+}
+
+/* small helper for pages without premium CSS loaded */
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0}
+
+/* When header has a hero, hide the default header background (from main style.css) */
+header.has-hero{background:none !important;padding:0 !important}
+header.has-hero::after{display:none !important}
+
+/* Body background override: near-black grey gradient for unified, premium look */
+body{
+  /* Near-black grey gradient to replace old brown tones */
+  background: linear-gradient(120deg, #0f1112 0%, #1a1c1d 100%);
+  color: #efe6db;
+}
