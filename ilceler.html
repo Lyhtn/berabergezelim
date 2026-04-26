@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlçeler | Beraber Gezelim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/premium-style.css">
+    <style>
+        .guide-hero-note {
+            max-width: 920px;
+            margin: 0 auto;
+            color: #e8e5e2;
+            line-height: 1.65;
+            text-align: center;
+        }
+        .status-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .status-chip {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.04);
+            color: #efece8;
+        }
+        .status-chip.active {
+            color: #111;
+            background: rgba(116, 218, 153, 0.92);
+            border-color: rgba(116, 218, 153, 0.92);
+        }
+        .status-chip.pending {
+            color: #f7e7b5;
+            background: rgba(255, 214, 107, 0.15);
+            border-color: rgba(255, 214, 107, 0.45);
+        }
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+        .roadmap-item {
+            background: linear-gradient(180deg, #3a3a3a 0%, #323232 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .roadmap-item h3 {
+            margin: 0 0 7px;
+            font-size: 1rem;
+            color: #ffd66b;
+        }
+        .roadmap-item p {
+            margin: 0;
+            color: #e8e5e2;
+            line-height: 1.55;
+            font-size: 0.93rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/icon.png" alt="Anasayfa ikonu" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+            Anasayfa
+        </a>
+        <a href="nasilgiderim.html">Nasıl Giderim</a>
+        <a href="ilceler.html" class="active">İlçeler</a>
+        <a href="hakkinda.html">Hakkında</a>
+        <a href="termal-turizm.html">Termal Turizm</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <header class="has-hero">
+        <section class="hero" style="position:relative;">
+            <div class="hero-iframe-wrap" aria-hidden="true" style="position:absolute;inset:0;overflow:hidden;z-index:0;">
+                <iframe
+                    src="https://www.youtube.com/embed/LqRUELsltj4?autoplay=1&mute=1&controls=0&loop=1&playlist=LqRUELsltj4&modestbranding=1&rel=0&playsinline=1"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    style="position:absolute;top:50%;left:50%;width:177.78vh;height:100vh;transform:translate(-50%,-50%);pointer-events:none;border:0;"
+                ></iframe>
+            </div>
+            <div class="hero-overlay" aria-hidden="true" style="position:relative;z-index:1;"></div>
+            <div class="hero-content" style="position:relative;z-index:2;">
+                <h1>Denizli İlçeleri</h1>
+                <p>İlçe bazlı gezi, kültür ve planlama içeriklerini buradan keşfedin.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section style="margin-bottom: 20px;">
+            <h2>İlçe Rehberi</h2>
+            <p class="guide-hero-note">
+                İlçe Rehberi, Denizli ilçeleri için gezi, kültür ve planlama içeriklerini tek bir yapıda toplar.
+                Çalışmaya Tavas ile başlanmış; rota planı, SWOT analizi, gastronomi ve 2030 vizyonu içeren kapsamlı içerik yayına alınmıştır.
+                Diğer ilçeler, aynı kalite standardında kademeli olarak bu yapıya dahil edilecektir.
+            </p>
+            <div class="status-chips" aria-label="İçerik durumu">
+                <span class="status-chip active">Tavas: Yayında</span>
+                <span class="status-chip pending">Pamukkale: Hazırlıkta</span>
+                <span class="status-chip pending">Merkezefendi: Hazırlıkta</span>
+            </div>
+            <div class="roadmap-grid" aria-label="İlçeler içerik yol haritası">
+                <article class="roadmap-item">
+                    <h3>1. Aşama: Tavas</h3>
+                    <p>Detaylı içerik tamamlandı; stratejik plan, rota, görsel anlatı ve etkileşimli modüller aktif.</p>
+                </article>
+                <article class="roadmap-item">
+                    <h3>2. Aşama: Pamukkale</h3>
+                    <p>Doğal miras, termal turizm ve ziyaretçi akışı odaklı içerik paketi aynı yapı ile eklenecek.</p>
+                </article>
+                <article class="roadmap-item">
+                    <h3>3. Aşama: Merkezefendi</h3>
+                    <p>Kentsel kültür, yerel yaşam ve belediye planlama ekseninde ilçe sayfası genişletilecek.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Öne Çıkan İlçeler</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="img/tavas.png" alt="Tavas" loading="lazy">
+                    <h3>Tavas</h3>
+                    <p>Turizm politikası, interaktif SWOT analizi, rota planı ve 2030 vizyonunu içeren kapsamlı Tavas sayfasına geçin.</p>
+                    <a href="tavas.html">Detaya Git</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/pamukkale_new.jpg" alt="Pamukkale" loading="lazy">
+                    <h3>Pamukkale</h3>
+                    <p>Travertenler, antik miras ve termal turizm odaklarıyla ilçeye özel detay içerikler bu bölümde genişletilecektir.</p>
+                    <a href="#" aria-disabled="true">Detay Yakında</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/camlik.jpg" alt="Merkezefendi" loading="lazy">
+                    <h3>Merkezefendi</h3>
+                    <p>İlçe bazlı önemli noktalar, kültürel duraklar ve yerel planlama notları bu karta kademeli olarak eklenecektir.</p>
+                    <a href="#" aria-disabled="true">Detay Yakında</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Beraber Gezelim - İlçeler</p>
+    </footer>
+
+    <script src="js/premium-nav.js" defer></script>
+</body>
+</html>
