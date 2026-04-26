@@ -246,7 +246,7 @@
         }
         .swot-card {
             perspective: 1000px;
-            min-height: 220px;
+            min-height: 320px;
             transition: transform 0.22s ease;
             will-change: transform;
         }
@@ -258,7 +258,7 @@
             position: relative;
             width: 100%;
             height: 100%;
-            min-height: 220px;
+            min-height: 320px;
             transition: transform 0.45s ease;
             transform-style: preserve-3d;
         }
@@ -330,19 +330,24 @@
         .swot-back {
             background: linear-gradient(180deg, #2f3133 0%, #292a2c 100%);
             transform: rotateY(180deg);
+            padding: 16px;
+            overflow-y: auto;
+            max-height: 100%;
         }
         .swot-back ul {
             margin: 0;
-            padding-left: 1rem;
+            padding-left: 1.2rem;
         }
         .swot-back li {
             color: #e8e5e2;
-            margin: 8px 0;
-            line-height: 1.45;
+            margin: 6px 0;
+            line-height: 1.4;
+            font-size: 0.9rem;
+            word-wrap: break-word;
         }
         .swot-back h3 {
-            margin: 0 0 8px;
-            font-size: 1rem;
+            margin: 0 0 10px;
+            font-size: 0.95rem;
             color: #ffd66b;
         }
         .gallery-grid {
@@ -1008,12 +1013,12 @@
             <h2>Nereye Gidilir?</h2>
             <div class="card-container">
                 <article class="card">
-                    <img src="img/babadag-yaylasi.jpg" alt="Babadağ Yaylaları" loading="lazy">
+                    <img src="img/bozdagyaylalar.jpg" alt="Babadağ Yaylaları" loading="lazy">
                     <h3>Yaylalar ve Doğal Alanlar</h3>
                     <p>Çam ormanlarıyla kaplı Taşdelen ve Karaçöplen yaylaları; Yardan Çayı ve Kelleci Vadisi ile doğa yürüyüşü rotaları.</p>
                 </article>
                 <article class="card">
-                    <img src="img/babadag-evleri.jpg" alt="Tarihi Babadağ Evleri" loading="lazy">
+                    <img src="img/babadagevleri.jpg" alt="Tarihi Babadağ Evleri" loading="lazy">
                     <h3>Tarihi Babadağ Evleri</h3>
                     <p>18. ve 20. yüzyıllar arasında inşa edilmiş, alt katından dokuma seslerinin geldiği kendine özgü mimariye sahip renkli evler.</p>
                 </article>
@@ -1109,7 +1114,7 @@
             <p class="section-note">Babadağ'ın yöresel mutfağı, ziyaretçilerin ilçede daha uzun süre kalmasını sağlayan besleyici ve geleneksel lezzetlerden oluşur.</p>
             <div class="gallery-grid">
                 <article class="food-card">
-                    <img src="img/denizlitandiri.jpg" alt="Denizli Tandırı" loading="lazy">
+                    <img src="img/denizlitandir.jpg" alt="Denizli Tandırı" loading="lazy">
                     <div class="food-body">
                         <span class="gi-badge">Yöresel Lezzet</span>
                         <h3>Denizli Tandırı</h3>
@@ -1117,7 +1122,7 @@
                     </div>
                 </article>
                 <article class="food-card">
-                    <img src="img/babadagpidesi.jpg" alt="Babadağ Pidesi" loading="lazy">
+                    <img src="img/babadagpide.jpg" alt="Babadağ Pidesi" loading="lazy">
                     <div class="food-body">
                         <span class="gi-badge">İlçeye Özgü</span>
                         <h3>Babadağ Pidesi & Keşkek</h3>
@@ -1139,7 +1144,7 @@
             </p>
             <div class="ancient-grid">
                 <figure class="ancient-media">
-                    <img src="img/dokuma-tezgahi.jpg" alt="Babadağ Dokuma Tezgahları" loading="lazy">
+                    <img src="img/babadagdokuma.jpg" alt="Babadağ Dokuma Tezgahları" loading="lazy">
                 </figure>
                 <article class="ancient-panel">
                     <h3>Neden Stratejik Bir Değer?</h3>
@@ -1194,7 +1199,7 @@
 
             <div class="vision-pillar-grid" aria-label="2030 vizyonunun stratejik sütunları">
                 <article class="vision-pillar">
-                    <img src="img/babadag-yayla-kamp.jpg" alt="Babadağ ve yayla turizmi" loading="lazy">
+                    <img src="img/bozdagyaylalar.jpg" alt="Babadağ ve yayla turizmi" loading="lazy">
                     <div class="vision-pillar-body">
                         <h3>Doğa ve Yayla Turizmi</h3>
                         <p>Sıcak yaz aylarında serin havasıyla yayla turizmi, ekoturizm parkurları ve doğa sporları ile canlandırılacaktır.</p>
@@ -1208,7 +1213,7 @@
                     </div>
                 </article>
                 <article class="vision-pillar">
-                    <img src="img/dokuma.jpg" alt="Dokuma atölyeleri" loading="lazy">
+                    <img src="img/babadagdokuma.jpg" alt="Dokuma atölyeleri" loading="lazy">
                     <div class="vision-pillar-body">
                         <h3>Yerel Üretim Ekonomisi</h3>
                         <p>Dokuma atölyeleri turizme entegre edilecek, turistler sadece izleyici değil deneyimleyen katılımcılar olacaktır.</p>
